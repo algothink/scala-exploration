@@ -1,0 +1,257 @@
+2021.01.01 21:10:24 INFO  Started: Metals version 0.9.7 in workspace '/Users/ramzi/code/algothink/scala/pfds-okasaki' .
+2021.01.01 21:10:26 INFO  time: initialize in 2.36s
+2021.01.01 21:10:27 WARN  Build server is not auto-connectable.
+2021.01.01 21:10:27 WARN  no build tool detected in workspace '/Users/ramzi/code/algothink/scala/pfds-okasaki'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Jan 01, 2021 9:10:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc",
+      "languageId": "scala",
+      "version": 1,
+      "text": "\n"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.NoSuchFileException: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3205)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:45)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.didOpen(MetalsLanguageServer.scala:887)
+	... 16 more
+
+2021.01.01 21:10:37 INFO  no build target: using presentation compiler with only scala-library
+Jan 01, 2021 9:10:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Jan 01, 2021 9:10:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 71, 71, 77)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 71, 71, 77)
+Jan 01, 2021 9:12:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 47
+Jan 01, 2021 9:12:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+Jan 01, 2021 9:12:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 115, 115, 121)
+Jan 01, 2021 9:13:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:76)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 115, 115, 122)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 138, 138, 144)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 138, 138, 144)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[A]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 138, 138, 146)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[A]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 138, 138, 146)
+Jan 01, 2021 9:13:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 113
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 182, 182, 188)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 182, 182, 189)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 205, 205, 211)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 205, 205, 211)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[A]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 205, 205, 213)
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[A]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 205, 205, 213)
+Jan 01, 2021 9:14:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 160
+Jan 01, 2021 9:14:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 161
+Jan 01, 2021 9:14:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 162
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 240, 240, 246)
+Jan 01, 2021 9:15:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 191
+Jan 01, 2021 9:15:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+Jan 01, 2021 9:15:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 219
+Jan 01, 2021 9:16:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 254
+Jan 01, 2021 9:19:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 296
+Exception in thread "pool-1-thread-25" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionCancelChecker.isCancelled(MtagsEnrichments.scala:152)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1(FormattingProvider.scala:63)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$isCancelled$1$adapted(FormattingProvider.scala:63)
+	at scala.Option.exists(Option.scala:376)
+	at scala.meta.internal.metals.FormattingProvider.isCancelled(FormattingProvider.scala:63)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1(FormattingProvider.scala:204)
+	at scala.meta.internal.metals.FormattingProvider.$anonfun$handleMissingFile$1$adapted(FormattingProvider.scala:197)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021.01.01 21:20:01 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+2021.01.01 21:20:19 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+2021.01.01 21:22:29 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 9:24:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 303
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 430, 430, 436)
+Jan 01, 2021 9:26:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 343
+Jan 01, 2021 9:26:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 348
+Jan 01, 2021 9:26:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 362
+Jan 01, 2021 9:27:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 387
+Jan 01, 2021 9:28:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 414
+Jan 01, 2021 9:29:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 453
+Jan 01, 2021 9:29:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 457
+Jan 01, 2021 9:30:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 490
+2021.01.01 21:30:43 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 769, 769, 775)
+Jan 01, 2021 9:31:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 525
+Jan 01, 2021 9:31:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 526
+Jan 01, 2021 9:31:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 543
+Jan 01, 2021 9:31:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 545
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 852, 852, 858)
+Jan 01, 2021 9:32:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 574
+Jan 01, 2021 9:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 589
+2021.01.01 21:32:18 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 9:32:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 594
+2021.01.01 21:32:27 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 9:32:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 599
+Jan 01, 2021 9:52:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 603
+something's wrong: no file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc in this.MySeq[<error>]RangePosition(file:///Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc, 951, 951, 957)
+Jan 01, 2021 9:52:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 641
+Jan 01, 2021 9:52:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 651
+Jan 01, 2021 9:53:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 665
+Jan 01, 2021 9:53:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 684
+Jan 01, 2021 9:54:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 725
+Jan 01, 2021 9:54:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 736
+Jan 01, 2021 9:54:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 751
+Jan 01, 2021 9:55:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 763
+Jan 01, 2021 9:55:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 785
+Jan 01, 2021 9:56:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 795
+Jan 01, 2021 9:56:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 797
+Jan 01, 2021 9:57:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 814
+Jan 01, 2021 9:57:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 827
+Jan 01, 2021 9:58:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 846
+2021.01.01 21:58:16 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+2021.01.01 21:58:32 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 9:58:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 857
+Jan 01, 2021 10:00:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 859
+Jan 01, 2021 10:00:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 868
+Jan 01, 2021 10:00:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 869
+Jan 01, 2021 10:00:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 899
+Jan 01, 2021 10:00:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 900
+Jan 01, 2021 10:01:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 941
+2021.01.01 22:01:15 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 10:01:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 947
+2021.01.01 22:01:24 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+Jan 01, 2021 10:01:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 948
+2021.01.01 22:01:37 WARN  no build target for: /Users/ramzi/code/algothink/scala/pfds-okasaki/structure-decomposition.sc
+2021.01.03 01:39:40 WARN  resetting database: /Users/ramzi/code/algothink/scala/pfds-okasaki/.metals/metals.h2.db
